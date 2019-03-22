@@ -5,8 +5,10 @@
     <title>Bootstrap Naturitas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="ces.css">
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -24,16 +26,13 @@
             <p class="envio-gratis-a-parti claseVisible"> <img class="shape" src="imagenes/delivery-box.svg"> 30 de plazo-Devolución gratuita</p>
         </div>
 
-        <!-- navbar desplegable -->
+        <!-- navbar mobile -->
         <div class="col-2 col-sm-2 visible">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <button class="sinborde navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <img class="fill-1" src="imagenes/menu_mobile.svg">
                 </button>
 
-             
-                  <!-- visible oculta para desktop -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a class="nav-link" href="#">SUPLEMENTOS<span class="sr-only">(current)</span></a></li>
@@ -45,27 +44,26 @@
                         <li class="nav-item"><a class="nav-link" href="#">HIGIENE</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">HUERTO</a></li>
                     </ul>
-                </div>
-           
-            </nav>
-            
+                </div>          
+            </nav>          
         </div>
       
-        <!-- div que contiene las imágenes del navbar -->
+        <!-- div que contiene las imágenes del navbar y barra búsqueda -->
         <div class="imagenes col-9 col-sm-9 col-lg-12">
             <div class="row">
-                <!-- mobile -->
+                <!-- imagen telefono solo mobile -->
                 <div class="col-1 col-sm-1 visible"><img class="oval-3" src="imagenes/telephone.svg"></div>   
                 
-                <!-- mobile -->
+                <!-- imagenes naturitas -->
+                <!-- imagen naturitas mobile -->
                 <div class="col-6 col-sm-5 visible"><img class="fill-7" src="imagenes/logo_naturitas.svg"></div>
-                <!-- desktop -->
+                <!-- imagen naturitas desktop -->
                 <div class="col-lg-2 claseVisible"><img src="imagenes/logo_naturitas.svg"></div>
 
-                <!-- barra busqueda desktop -->
-                <div class="col-lg-3 claseVisible">
+                <!-- barra búsqueda desktop -->
+                <div class="col-lg-5 claseVisible">
                         <form class="form-group input-group">
-                            <input type="text" class="form-control bg-busca" placeholder="¿Qué buscas hoy?">
+                            <input type="text" class="form-control bg-busca" placeholder="¿Qué buscas hoy? Encuentra entre más de 30 mil productos…">
                             <span class="input-group-btn">
                                 <button class="bg-button" type="button">
                                     <span class=""> <img class="search-material" src="imagenes/search.svg"> </span>
@@ -74,23 +72,28 @@
                         </form>
                     </div>
 
-                <div class="col-2 col-sm-4 col-lg-4 nav-item visible"><img src="imagenes/iconoCuenta.svg"></div>
+                <!-- imagen icono mobile -->
+                <div class="col-2 col-sm-4 nav-item visible"><img src="imagenes/iconoCuenta.svg"></div>
 
                 <!-- desktop -->
-                <div class="col-2 col-sm-4 col-lg-4 nav-item dropdown claseVisible">
+                <div class="col-lg-2 claseVisible"><img src="imagenes/favoritos.svg">Favoritos</div>
+                <div class="col-lg-2 nav-item dropdown claseVisible">
+                    
                     <a class="nav-link dropdown-toggle texto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="imagenes/iconoCuenta.svg">mi Cuenta
+                        <img src="imagenes/iconoCuenta.svg"><span class="negro">mi Cuenta</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Lorem</a></div>                        
                 </div>
 
-                <!-- mobile -->
-                <div class="col-2 col-sm-2 col-lg-2"><img class="fill-1" src="imagenes/cart.svg"></div>
+                <!-- imagen bolsa desktop -->
+                <div class="col-lg-1 claseVisible"><img class="rectangle-13" src="imagenes/Carrito.png"></div>
+
+                <!-- imagen bolsa mobile -->
+                <div class="col-2 col-sm-2 visible mb-2"><img class="fill-1" src="imagenes/cart.svg"></div>
             </div>
         </div>
 
-        <!-- barra de búsqueda -->
-        <!-- mobile -->
+        <!-- barra búsqueda mobile -->
         <div class="col-12 col-sm-12 visible">
             <form class="form-group input-group">
                 <input type="text" class="form-control bg-busca" placeholder="¿Qué buscas hoy?">
@@ -102,16 +105,15 @@
             </form>
         </div>
 
-        <!-- claseVisible oculta para mobile -->
-        <div class="col-lg-12 claseVisible">
-
+        <!-- navbar desktop -->
+        <div class="col-lg-12 claseVisible ">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-             
-             
-                  <!-- visible oculta para desktop -->
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+
+                    <div class="">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">SUPLEMENTOS<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SUPLEMENTOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">PLANTAS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">ALIMENTACIÓN</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">COSMÉTICA</a></li>
@@ -121,12 +123,19 @@
                         <li class="nav-item"><a class="nav-link" href="#">HUERTO</a></li>
                     </ul>
                 </div>
-           
-            </nav>
-            
+                <div>
+                      
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Nuestras Marcas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span class="rojo">Ofertas</span><img src="imagenes/offers_icon.svg"></a></li>
+                        </ul>
+                    </div> 
+                
+                
+                  
+            </div>             
+            </nav>     
         </div>
-
-
 
     </div>
 
@@ -144,19 +153,16 @@
 
     <!-- máscara -->
     <div class="flexible d-flex justify-content-around espacio">
-        <!-- mobile -->
-            <div class="visible">
-                    <img src="imagenes/bannerp_01_mob.jpg">
-                    
-            </div>
-            <!-- desktop -->
-        <div class="mask claseVisible">
-                <img src="imagenes/banner_01.jpg">
-        </div>
-    
-        <div class="mask2 claseVisible">
-                <img src="imagenes/bannerp_02.jpg">
-        </div>
+        <!-- imagen mobile -->
+        <div class="visible"><img src="imagenes/bannerp_01_mob.jpg"></div>
+        
+        <!-- imagenes desktop -->
+        <div class="mask claseVisible"><img src="imagenes/banner_01.jpg"></div> 
+        <div class="mask2 claseVisible"><img src="imagenes/bannerp_02.jpg"></div>
+    </div>
+
+    <!-- Elementos con clase visible: se muestran en mobile y se ocultan en desktop -->
+    <!-- Elementos con clase claseVisible: se muestran en desktop y se ocultan en mobile -->
 
 </body>
 </html>

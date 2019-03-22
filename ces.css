@@ -22,10 +22,6 @@
     margin-top: 3%;
 }
 
-.claseVisible {
-    display: none; /* oculta */
-}
-
 .sinborde {
     border: 0px;
 }
@@ -113,12 +109,26 @@
     text-align: center;
 }
 
-.visible {
-    display: inline;
-}
+
+
+.rectangle-13 {	height: 50px;	width: 115px;	border: 1px solid #F2F2F2;	border-radius: 6px;}
 
 .espacio {
     margin-top: 1.2%;
+}
+
+.visible {
+    display: inline; /* muestra los elementos de mobile / oculta para desktop */
+}
+
+.claseVisible {
+    display: none; /* muestra los elementos de desktop / oculta para mobile */
+}
+.negro{
+    color:black;
+}
+.rojo{
+    color:red;
 }
 
 
